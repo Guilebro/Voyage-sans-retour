@@ -1,0 +1,99 @@
+.PictureDetails {
+    font-size: 2vh;
+    justify-content: flex-start;
+    align-items: stretch;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    grid-area: 1 / 1 / 6 / 2;
+    width: 100%;
+}
+
+.check_panier {
+    width: 80px;
+    height: auto;
+    position:absolute;
+    left: 85.5vw;
+    top: -16vh;
+}
+
+.pictoDead {
+    text-align: start;
+    width: 5vw;
+}
+
+.NameActivity {
+    font-size: .8 rem;
+    margin-top: 2vh;
+    font-family: var(--font-title);
+    margin-left: 2vw;
+    grid-area: 1 / 2 / 2 / 5;
+    color: #6F4796;
+}
+
+.Buy {
+    margin-left: 4vw;
+    grid-area: 1 / 5 / 2 / 6;
+    width: 50%;
+}
+
+.DescriptionActivity {
+    font-size: .8rem;
+    margin-right: 1vw;
+    font-family: var(--font-text);
+    margin-left: 2em;
+    grid-area: 2 / 2 / 3 / 6;
+    color: white;
+}
+
+.Guide {
+    font-size: .6rem;
+    margin-top: 1.5vh;
+    font-family: var(--font-text);
+    margin-left: 2vw;
+    grid-area: 5 / 2 / 6 / 4;
+    color: white;
+
+}
+
+.FuckingDangerosity {
+    margin-left: 2vw;
+    align-items: center;
+    font-family: var(--font-text);
+    display: flex;
+    flex-direction: row;
+    grid-area: 4 / 2 / 5 / 5;
+    color: white;
+}
+
+.Age {
+    font-size: .8rem;
+    margin-top: 1vh;
+    font-family: var(--font-text);
+    grid-area: 3 / 4 / 4 / 6;
+    color: white;
+}
+
+.Price {
+    margin-left: 7vw;
+    font-family: var(--font-text);
+    font-size: 4vh;
+    grid-area: 5 / 4 / 6 / 6;
+    color: #6F4796;
+}
+
+.Country {
+    font-size: .7rem;
+    margin-top: 1vh;
+    font-family: var(--font-text);
+    margin-left: 2vw;
+    grid-area: 3 / 2 / 4 / 4;
+    color: white;
+}
+
+.cancelButton {
+    position: absolute;
+    width: 20px;
+    grid-area: 1 / 1 / 2 / 2;
+    box-shadow: 0px 0px 5px 5px #6F4796;
+    border-radius: 50%;
+}

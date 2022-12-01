@@ -1,0 +1,5 @@
+.main_section {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--color-black);
+    }

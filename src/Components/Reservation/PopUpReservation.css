@@ -1,0 +1,21 @@
+.popUpReservation {
+  position: absolute;
+  left: 33vw;
+  top: 30vh;
+  width: 35vw;
+  height:30vh;
+  background-color: var(--color-violet);
+  box-shadow: 0px 0px 1000px 150px black;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.popUpTitleReservation {
+text-align:center;
+  color: white;
+  margin: 0 5vw;
+
+}

@@ -1,0 +1,32 @@
+:root {
+    --color-violet: #6F4796;
+    --color-black: #181A23;
+    --color-grey: #7B7B7C;
+    background-color: #181A23;
+    --font-title: "MYRIADPRO-BOLD";
+    --font-text: "Roboto-Regular";
+
+}
+
+@font-face {
+    font-family: "MYRIADPRO-BOLD";
+    src: url("./assets/fonts/MYRIADPRO-BOLD.OTF");
+}
+
+@font-face {
+    font-family: "Roboto-Regular";
+    src: url("./assets/fonts/Roboto-Regular.ttf");
+}
+
+h1 {
+    font-family: var(--font-title);
+}
+
+h2 {
+    font-family: var(--font-text);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}

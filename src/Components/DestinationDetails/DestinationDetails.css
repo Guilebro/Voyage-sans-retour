@@ -1,0 +1,22 @@
+.cardDetail {
+    box-shadow: 0px 0px 40px 5px #6F4796;
+    background-color: var(--color-black);
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 2.5fr repeat(4, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    width: 60vw;
+}
+
+.cardActivity {
+    margin-left: 5vw;
+}
+.destination__container{
+    position: absolute;
+    display: none;
+    display: flex;
+    justify-content: center;
+    top: 15vh;
+    left: 10vw;
+}

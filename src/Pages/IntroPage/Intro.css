@@ -1,0 +1,94 @@
+.intro {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.intro__img {
+    position: relative;
+    width: 40vw;
+
+}
+
+.intro__container h1 {
+    margin-top: -6%;
+    margin-bottom: 5px;
+    color: #FFF;
+    font-size: 5rem;
+}
+
+.intro__container h2 {
+    margin: 0%;
+    color: #FFF;
+    font-size: 3rem;
+}
+
+.btn__intro {
+    border-radius: 8px;
+    padding: 5px;
+    margin: 15px;
+}
+
+.button {
+    background: black;
+    margin: 20px auto;
+    width: 200px;
+    height: 50px;
+    overflow: hidden;
+    text-align: center;
+    transition: .2s;
+    cursor: pointer;
+    border-radius: 3px;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, .2);
+    border-radius: 15px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btnTwo {
+    position: relative;
+    width: 200px;
+    height: 100px;
+    margin-top: -100px;
+    padding-top: 2px;
+    background: var(--color-violet);
+    left: -250px;
+    transition: .3s;
+}
+
+.btnText {
+    color: white;
+    transition: .3s;
+    margin: 2.7vh;
+}
+
+.btnText2 {
+    margin-top: 67px;
+    margin-right: -130px;
+    color: #FFF;
+}
+
+.button:hover .btnTwo {
+    /*When hovering over .button change .btnTwo*/
+    left: -130px;
+}
+
+.button:hover .btnText {
+    /*When hovering over .button change .btnText*/
+    margin-left: 65px;
+}
+
+.button:active {
+    /*Clicked and held*/
+    box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.3);
+}

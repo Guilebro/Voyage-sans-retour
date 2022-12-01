@@ -1,0 +1,45 @@
+.navbar {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 6vh;
+    background-image: url("./src/assets/Favelas.jpeg");
+    background-position: center;
+    background-size: cover;
+}
+
+.navbar__img {
+    position: relative;
+    width: 25%;
+    height: 25%;
+    margin-top: 0.5rem;
+    margin-left: 40px;
+}
+
+.navbar__img__valise {
+    position: relative;
+    width: 12%;
+    margin-right: 1vw;
+}
+
+.link__valise {
+    display: flex;
+    justify-content: end;
+}
+
+a {
+    position: relative;
+}
+
+a .navbar__img__valise {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar_title {
+    color: white;
+    margin-right: 40px;
+}

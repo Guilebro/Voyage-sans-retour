@@ -1,0 +1,436 @@
+.titleBlock {
+  margin-top: 4vh;
+}
+
+.check_panier-reservation {
+  width: 70px;
+  height: auto;
+  position:absolute;
+  left: 94vw;
+  top: -0.9vh;
+}
+
+.reservation__title {
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-size: 2.5rem;
+}
+.intro__reservation {
+  position: relative;
+  display: flex;
+  justify-content: end;
+  margin-right: 8vw;
+  top: -5vh;
+}
+
+.purple_cloud {
+  width: 12vw;
+  display: flex;
+  justify-content: end;
+}
+
+.general__contact{
+    display:flex;
+      display:flex;
+    justify-content: center;
+    margin: 0;
+}
+
+.contact__section1 {
+  color: white;
+}
+.field__input{
+    color:rgb(159, 68, 184);
+}
+
+.contact__section1 h3{
+     margin-top: 1.4vh;
+     margin-bottom:0;
+     font-size: 1.5rem;
+}
+
+.contact__section1 h4{
+    margin-top:0;
+    margin-bottom:3vh;
+      font-size: 0.8rem;
+}
+
+.contact__section2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.btn {
+  display: inline-block;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  border: 0;
+  outline: 0;
+  padding: 0;
+  transition: all 200ms ease-in;
+  cursor: pointer;
+  width:20vw;
+  margin-bottom: 3rem;
+ }
+
+.btn--primary {
+  background: #6f4796;
+  color: #fff;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  padding: 1vh 2.5vw;
+}
+
+.btn:hover {
+  background: darken(#390e4e, 4%);
+}
+
+.btn:active {
+  background: #561490;
+  box-shadow: inset 0 0 10px 2px rgba(0, 0, 0, 0.2);
+}
+
+.form__field {
+  width: 25vw;
+  background: #fff;
+  color: #a3a3a3;
+  font: inherit;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+  border: 0;
+  outline: 0;
+  padding: 2vh 18px;
+  border-radius: 6px;
+}
+
+.ha-screen-reader{
+  width: var(--ha-screen-reader-width, 1px);
+  height: var(--ha-screen-reader-height, 1px);
+  padding: var(--ha-screen-reader-padding, 0);
+  border: var(--ha-screen-reader-border, none);
+
+  position: var(--ha-screen-reader-position, absolute);
+  clip: var(--ha-screen-reader-clip, rect(1px, 1px, 1px, 1px));
+  overflow: var(--ha-screen-reader-overflow, hidden);
+}
+
+/*
+=====
+RESET STYLES
+=====
+*/
+.page{
+    color:white;
+  }
+
+.field__input{ 
+  --uiFieldPlaceholderColor: var(--fieldPlaceholderColor, #767676);
+  
+  background-color: transparent;
+  border-radius: 0;
+  border: none;
+
+  --webkit-appearance: none;
+  --moz-appearance: none;
+
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.field__input:focus::-webkit-input-placeholder{
+  color: var(--uiFieldPlaceholderColor);
+}
+
+.field__input:focus::-moz-placeholder{
+  color: var(--uiFieldPlaceholderColor);
+}
+
+/*
+=====
+CORE STYLES
+=====
+*/
+
+.field{
+  --uiFieldBorderWidth: var(--fieldBorderWidth, 2px);
+  --uiFieldPaddingRight: var(--fieldPaddingRight, 1rem);
+  --uiFieldPaddingLeft: var(--fieldPaddingLeft, 1rem);   
+  --uiFieldBorderColorActive: var(--fieldBorderColorActive, rgba(22, 22, 22, 1));
+
+  display: var(--fieldDisplay, inline-flex);
+  position: relative;
+  font-size: var(--fieldFontSize, 1rem);
+}
+
+.field__input{
+  box-sizing: border-box;
+  width: var(--fieldWidth, 100%);
+  height: var(--fieldHeight, 3rem);
+  padding: var(--fieldPaddingTop, 1.25rem) var(--uiFieldPaddingRight) var(--fieldPaddingBottom, .5rem) var(--uiFieldPaddingLeft);
+  border-bottom: var(--uiFieldBorderWidth) solid var(--fieldBorderColor, rgba(0, 0, 0, .25));  
+}
+
+.field__input:focus{
+  outline: none;
+}
+
+.field__input::-webkit-input-placeholder{
+  opacity: 0;
+  transition: opacity .2s ease-out;
+}
+
+.field__input::-moz-placeholder{
+  opacity: 0;
+  transition: opacity .2s ease-out;
+}
+
+.field__input:focus::-webkit-input-placeholder{
+  opacity: 1;
+  transition-delay: .2s;
+}
+
+.field__input:focus::-moz-placeholder{
+  opacity: 1;
+  transition-delay: .2s;
+}
+
+.field__label-wrap{
+  box-sizing: border-box;
+  pointer-events: none;
+  cursor: text;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.field__label-wrap::after{
+  content: "";
+  box-sizing: border-box;
+  width: 100%;
+  height: 0;
+  opacity: 0;
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.field__input:focus ~ .field__label-wrap::after{
+  opacity: 1;
+}
+
+.field__label{
+  position: absolute;
+  left: var(--uiFieldPaddingLeft);
+  top: calc(50% - .5em);
+
+  line-height: 1;
+  font-size: var(--fieldHintFontSize, inherit);
+
+  transition: top .2s cubic-bezier(0.9, -0.15, 0.1, 1.15), opacity .2s ease-out, font-size .2s ease-out;
+}
+
+.field__input:focus ~ .field__label-wrap .field__label,
+.field__input:not(:placeholder-shown) ~ .field__label-wrap .field__label{
+  --fieldHintFontSize: var(--fieldHintFontSizeFocused, .75rem);
+
+  top: var(--fieldHintTopHover, .25rem);
+}
+
+/* 
+effect 1
+*/
+
+.field_v1 .field__label-wrap::after{
+  border-bottom: var(--uiFieldBorderWidth) solid var(--uiFieldBorderColorActive);
+  transition: opacity .2s ease-out;
+}
+
+/* 
+effect 2
+*/
+
+.field_v2 .field__label-wrap{
+  overflow: hidden;
+}
+
+.field_v2 .field__label-wrap::after{
+  border-bottom: var(--uiFieldBorderWidth) solid var(--uiFieldBorderColorActive);
+  transform: translate3d(-105%, 0, 0);
+  transition: transform .285s ease-out .2s, opacity .2s ease-out .2s;
+}
+
+.field_v2 .field__input:focus ~ .field__label-wrap::after{
+  transform: translate3d(0, 0, 0);
+  transition-delay: 0;
+}
+
+/*
+effect 3
+*/
+
+.field_v3 .field__label-wrap::after{
+  border: var(--uiFieldBorderWidth) solid var(--uiFieldBorderColorActive);
+  transition: height .2s ease-out, opacity .2s ease-out;
+}
+
+.field_v3 .field__input:focus ~ .field__label-wrap::after{
+  height: 100%;
+}
+
+/*
+=====
+LEVEL 4. SETTINGS
+=====
+*/
+
+.field{
+  --fieldBorderColor: #D1C4E9;
+  --fieldBorderColorActive: #673AB7;
+}
+
+/*
+=====
+DEMO
+=====
+*/
+
+body{
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.page{
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 480px;
+  margin-left: 3vw;
+
+
+  display: grid;
+  grid-gap: 30px;
+}
+
+.linktr{
+  order: -1;
+  padding: 1.75rem;
+  text-align: center;
+}
+
+.linktr__goal{
+  background-color: rgb(209, 246, 255);
+  color: rgb(8, 49, 112);
+  box-shadow: rgb(8 49 112 / 24%) 0px 2px 8px 0px;
+  border-radius: 2rem;
+  padding: .5rem 1.25rem;
+}
+
+@media (min-width: 1024px){
+  
+  .linktr{
+    position: absolute; 
+    right: 1rem; 
+    bottom: 1rem;
+  }
+}
+
+.r-link{
+    --uirLinkDisplay: var(--rLinkDisplay, inline-flex);
+    --uirLinkTextColor: var(--rLinkTextColor);
+    --uirLinkTextDecoration: var(--rLinkTextDecoration, none);
+
+    display: var(--uirLinkDisplay) !important;
+    color: var(--uirLinkTextColor) !important;
+    text-decoration: var(--uirLinkTextDecoration) !important;
+}
+
+:root {
+  --form-control-color: rebeccapurple;
+  --form-control-disabled: #959495;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+
+.form-control {
+  font-family: system-ui, sans-serif;
+  font-size: 1rem;
+  display: grid;
+  grid-template-columns: 1.5em auto;
+  gap: 0.5em;
+}
+
+.form-control + .form-control {
+  margin-top: 1em;
+}
+
+.form-control--disabled {
+  color: var(--form-control-disabled);
+  cursor: not-allowed;
+}
+
+input[type="checkbox"] {
+  /* Add if not using autoprefixer */
+  -webkit-appearance: none;
+  /* Remove most all native input styles */
+  appearance: none;
+  /* For iOS < 15 */
+  background-color: var(--form-background);
+  /* Not removed via appearance */
+  margin: 0;
+
+  font: inherit;
+  color: currentColor;
+  width: 1.15em;
+  height: 1.15em;
+  border: 0.15em solid currentColor;
+  border-radius: 0.15em;
+  transform: translateY(-0.075em);
+  display: grid;
+  place-content: center;
+}
+
+input[type="checkbox"]::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+  transform: scale(0);
+  transform-origin: bottom left;
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(--form-control-color);
+  /* Windows High Contrast Mode */
+  background-color: CanvasText;
+}
+
+input[type="checkbox"]:checked::before {
+  transform: scale(1);
+}
+
+input[type="checkbox"]:focus {
+  outline: max(2px, 0.15em) solid currentColor;
+  outline-offset: max(2px, 0.15em);
+}
+
+input[type="checkbox"]:disabled {
+  --form-control-color: var(--form-control-disabled);
+
+  color: var(--form-control-disabled);
+  cursor: not-allowed;
+}

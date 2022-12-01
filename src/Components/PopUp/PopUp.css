@@ -1,0 +1,50 @@
+.popUp {
+    position: absolute;
+    left: 12.5vw;
+    top: 15vh;
+    width: 35vw;
+    height:30vh;
+    background-color: var(--color-violet);
+    box-shadow: 0px 0px 1000px 150px black;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.close-button {
+    position: absolute;
+    left: 31.5vw;
+    top: 3vh;
+    width: 2vw;
+    height: auto;
+}
+
+.container-button {
+    display: flex;
+    gap: 20px
+}
+
+.popUpTitle {
+    padding-bottom: 30px;
+    color: white;
+}
+
+.continuerAchat {
+    padding: 7px;
+    border-radius: 8px;
+    width: 8vw;
+    background-color: var(--color-violet);
+    color: white;
+    font-weight: bold;
+}
+
+.goPanier {
+    padding: 7px;
+    border-radius: 8px;
+    width: 8vw;
+    background-color: white;
+    color: var(--color-violet);
+    font-weight: bold;
+}
